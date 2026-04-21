@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Accredian Clone
 
-## Getting Started
+A modern **Accredian-like lead management and referral system clone** built using **Next.js 16 (App Router)**, **TypeScript**, **Zustand**, and API routes.  
+This project demonstrates full-stack development concepts including state management, API handling, and production build optimization.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+- 📩 Lead submission form
+- 🧠 Global state management using Zustand
+- ⚡ Next.js API routes (`/api/leads`)
+- 📦 Optimized production build
+- 🎯 TypeScript support
+- 💾 In-memory lead storage (can be extended to DB)
+- 📱 Responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript
+- **State Management:** Zustand
+- **Backend:** Next.js API Routes
+- **Styling:** CSS / Tailwind (if used)
+- **Build Tool:** Next.js TurboPack
+
+---
+
+## 📂 Project Structure
+
+accredian-clone/
+│
+├── app/ # Next.js app directory
+│ ├── api/leads/ # API route for leads
+│ ├── page.tsx # Home page
+│
+├── store/ # Zustand store
+│ └── useStore.ts
+│
+├── utils/ # API helpers
+│ └── submitLead.ts
+│
+├── components/ # UI components
+│
+├── public/
+├── styles/
+└── package.json
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
 ```bash
+git clone https://github.com/your-username/accredian-clone.git
+cd accredian-clone
+
+---
+
+2. Install dependencies
+npm install
+
+---
+
+3. Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Build for production
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+5. Start production server
+npm start
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📡 API Endpoint
+POST /api/leads
+https://anilaccredian.vercel.app/api/leads
+---
+Add a new lead
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Request Body:
 
-## Deploy on Vercel
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9876543210"
+}
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Response:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+{
+  "success": true,
+  "data": { ...lead }
+}
+
+#localcalhost:
+http://localhost:3004/
+---
+
+check API:
+
+http://localhost:3004/api/leads
+
+---
+
+🧠 State Management (Zustand)
+leads: Lead[]
+addLead: (lead: Lead) => void
+setLeads: (leads: Lead[]) => void
+
+
+---
+
+
+📈 Future Improvements
+🗄️ Add MongoDB / Prisma database
+🔐 Authentication system
+📊 Admin dashboard
+📧 Email notifications
+
+---
+
+🌐 Deploy on Vercel
+
+Live Demo: https://anilaccredian.vercel.app
+
+---
+
+👨‍💻 Author
+
+Anil Kumar
+💼 Full Stack Developer
+
+
