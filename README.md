@@ -54,7 +54,7 @@ accredian-clone/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/accredian-clone.git
+git clone https://github.com/aniljiA1/anilaccredian.git
 cd accredian-clone
 
 ---
