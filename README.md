@@ -9,7 +9,7 @@ This project demonstrates full-stack development concepts including state manage
 
 - 📩 Lead submission form
 - 🧠 Global state management using Zustand
-- ⚡ Next.js API routes (`/api/leads`)
+- ⚡ Next.js API routes (`/api/leads`) 
 - 📦 Optimized production build
 - 🎯 TypeScript support
 - 💾 In-memory lead storage (can be extended to DB)
